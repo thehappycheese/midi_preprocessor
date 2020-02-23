@@ -1,0 +1,30 @@
+<html>
+	<body>
+
+		<canvas width="900" height="500"></canvas>
+
+	</body>
+	<script>
+
+var canvas = document.querySelector("canvas")
+var canvas_context = canvas.getContext('2d')
+window.ctx = canvas_context
+
+
+canvas.addEventListener("mousemove",function(e){
+	var rect = e.target.getBoundingClientRect();
+	var x = e.clientX - rect.left; //x position within the element.
+	var y = e.clientY - rect.top;  //y position within the element.
+
+	this.ctx.clearRect(0,0,canvas.width,canvas.height)
+	this.ctx.beginPath()
+	this.ctx.moveTo(x,10)
+	this.ctx.lineTo(y,10)
+	this.ctx.stroke()
+
+}.bind(window),false)
+
+
+
+	</script>
+</html>

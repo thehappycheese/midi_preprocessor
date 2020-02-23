@@ -1,0 +1,22 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "MAIIIN",
+			"type": "python",
+			"request": "launch",
+			"program": "E:\\Dropbox\\2019 Projects\\2019 07 21 Pipe Organ Electronics\\midi_preprocessor\\main.py",
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "Python: Current File",
+			"type": "python",
+			"request": "launch",
+			"program": "${file}",
+			"console": "integratedTerminal"
+		}
+	]
+}
